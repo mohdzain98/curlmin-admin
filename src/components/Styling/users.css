@@ -1,0 +1,29 @@
+/* @media (max-width: 576px) {
+
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(6),
+    td:nth-child(6) {
+        display: none;
+    }
+} */
+
+.short-container {
+    max-width: 100px;
+    /* Limit width */
+    white-space: nowrap;
+    /* Prevent wrapping */
+    overflow: hidden;
+    /* Hide overflow */
+    text-overflow: ellipsis;
+    /* Show "..." for overflow text */
+    display: block;
+}
+
+.short-container:hover {
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    text-overflow: clip;
+    /* Remove "..." */
+    white-space: nowrap;
+}
